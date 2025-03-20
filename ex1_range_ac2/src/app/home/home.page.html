@@ -1,0 +1,12 @@
+<ion-alert trigger="calc" header="Valor final da viagem:" message={{message}} [buttons]="calcButton">
+</ion-alert>
+<ion-content [fullscreen]="true">
+  <div class="containerMain">
+    <h1 class="titleMain">Gorjeta</h1>
+    <ion-range [ticks]="true" [snaps]="true" [min]="0" [max]="30" (ionChange)="onIonChange($event)"></ion-range>
+    <ion-input [(ngModel)]="priceAccount" type="number" class="custom" color="primary"
+      placeholder="Digite o valor da conta"></ion-input>
+    <ion-label>{{valueTips}}% de gorjeta</ion-label>
+    <ion-button id="calc" color="light" (click)="calcTip()">Calcular</ion-button>
+  </div>
+</ion-content>
