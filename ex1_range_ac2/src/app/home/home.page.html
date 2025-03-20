@@ -1,0 +1,10 @@
+<ion-content [fullscreen]="true">
+  <div class="containerMain">
+    <h1 class="titleMain">Gorjeta</h1>
+    <ion-range [ticks]="true" [snaps]="true" [min]="0" [max]="6" ></ion-range>
+    <ion-input [(ngModel)]="priceAccount" type="number" class="custom" color="primary"
+      placeholder="Digite a quantidade de quilômetros rodados"></ion-input>
+    <ion-label>Porcentagem da gorjeta: {{valueTips}}</ion-label>
+    <ion-button id="calc" color="light">Calcular</ion-button>
+  </div>
+</ion-content>

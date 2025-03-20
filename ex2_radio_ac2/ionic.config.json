@@ -1,0 +1,7 @@
+{
+  "name": "ex2ac21tri",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

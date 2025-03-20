@@ -1,0 +1,27 @@
+<ion-alert trigger="calc" header="Valor a pagar pelo combustível:" message={{message}} [buttons]="calcButton">
+</ion-alert>
+
+<ion-content [fullscreen]="true">
+  <div class="containerMain">
+    <h1 class="titleMain">Selecione o tipo de combustível</h1>
+    <ion-radio-group [(ngModel)]="typeFuel">
+      <ion-radio value="etanol">
+        <h1>Etanol</h1>
+        <p>Em média 9km por litro</p>
+      </ion-radio><br />
+      <ion-radio value="gasolina">
+        <h1>Gasolina</h1>
+        <p>Em média 12km por litro</p>
+      </ion-radio><br />
+      <ion-radio value="diesel">
+        <h1>Diesel</h1>
+        <p>Em média 15km por litro</p>
+      </ion-radio><br />
+    </ion-radio-group>
+    <ion-input [(ngModel)]="pricePerLiter" type="number" class="custom" color="primary"
+      placeholder="Preço por litro do combustível"></ion-input>
+    <ion-input [(ngModel)]="amountKmDriven" type="number" class="custom" color="primary"
+      placeholder="Quilometragem rodada"></ion-input>
+    <ion-button (click)="calcFunction()" id="calc" color="light">Calcular</ion-button>
+  </div>
+</ion-content>
