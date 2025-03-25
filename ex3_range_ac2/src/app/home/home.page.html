@@ -1,0 +1,18 @@
+<ion-alert trigger="calc" header="Valor do IMC:" message={{message}} [buttons]="['OK']">
+</ion-alert>
+<ion-content [fullscreen]="true">
+  <div class="containerMain">
+    <h1 class="titleMain">Calcular IMC</h1>
+    <div>
+      <label class="labelRange" for="rangeHeight">Sua altura em centímetros: {{valueHeight}}cm</label>
+      <ion-range id="rangeHeight" [ticks]="true" [snaps]="false" [min]="0" [max]="250"
+        (ionChange)="onHeightChange($event)"></ion-range>
+    </div>
+    <div>
+      <label class="labelRange" for="rangeWeight">Seu peso em quilogramas: {{valueWeight}}kg</label>
+      <ion-range id="rangeWeight" [ticks]="true" [snaps]="false" [min]="0" [max]="400"
+        (ionChange)="onWeightChange($event)"></ion-range>
+    </div>
+    <ion-button id="calc" color="light" (click)="calcImc()">Calcular IMC</ion-button>
+  </div>
+</ion-content>
