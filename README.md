@@ -3,18 +3,24 @@
 ## Descrição
 O repositório tem 5 arquivos, cada um com uma atividade diferente
 
-### Average
-Elabore um APP que faça a leitura de 4 notas escolares e calcule a média. Exiba a média acompanhada de uma das seguintes mensagens:
-Retido, para médias inferiores a 3;
-Recuperação, para médias entre 3 e 5.9;
-Aprovado, para média maior ou igual a 6
+### ex1_radio_ac2
+Desenvolver um APP onde o usuário seleciona o tipo de carro usando ion-radio, digita a
+quantidade de quilômetros rodados e o app retorna o valor final da viagem.
 
-### Temperature
-Elabore um App que leia uma temperatura, que pode ser em Celsius ou Fahrenheit e converta para a outra unidade, conforme as fórmulas:
-Celsius para Fahrenheit: (9*C+160)/5
-Fahrenheit para Celsius: (F-32)*(5/9)
+### ex2_radio_ac2
+Elabore um aplicativo que calcula o gasto com combustível. Para isso, o usuário irá selecionar em um
+ionradio o tipo de combustível, o preço por litro do combustível e a quilometragem rodada. Exiba, em
+um alert, o valor a pagar pelo combustível. 
 
-### Triangle
-Leia 3 valores referentes aos lados de um triângulo. Verifique se eles formam um triângulo e, se formar, exiba o tipo (Equilátero, Isósceles ou Escaleno). 
-Caso não forme um triângulo, avise ao usuário
+### ex1_range_ac2
+Crie um aplicativo simples de calculadora de gorjeta que permita aos usuários
+ajustar a porcentagem de gorjeta usando um ion-range.
 
+### ex2_range_ac2
+Desenvolva um aplicativo que converta valores de uma unidade de medida para outra
+(por exemplo, de quilômetros para milhas) com base no valor selecionado pelo usuário
+em um ion-range.
+
+### ex3_range_ac2
+Crie uma calculadora de IMC que calcule o índice de massa corporal com base no peso e
+na altura fornecidos pelo usuário.
