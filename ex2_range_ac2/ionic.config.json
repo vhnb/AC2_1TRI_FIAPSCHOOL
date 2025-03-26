@@ -1,0 +1,7 @@
+{
+  "name": "ex2_range_ac2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

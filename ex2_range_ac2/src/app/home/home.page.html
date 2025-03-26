@@ -1,0 +1,28 @@
+<ion-alert trigger="calc" header="Resultado da conversão:" message={{message}} [buttons]="['OK']">
+</ion-alert>
+<ion-content [fullscreen]="true">
+  <div class="containerMain">
+    <div class="contentValueToConvert">
+      <h1 class="titleMain">Conversor de unidade de medida</h1>
+      <div>
+        <label class="labelRange" for="rangeHeight">Insira o valor a ser convertido</label>
+        <ion-range id="rangeHeight" [ticks]="true" [snaps]="false" [min]="0" [max]="250"
+          (ionChange)="onConvertChange($event)"></ion-range>
+      </div>
+      <ion-radio-group mode="md" [(ngModel)]="optionsToConvert">
+        <ion-radio value="km">Quilômetros (km)</ion-radio>
+        <ion-radio value="m">Metros (m)</ion-radio>
+        <ion-radio value="cm">Centímetros (cm)</ion-radio>
+      </ion-radio-group>
+    </div>
+    <div class="contentOptionsConversion">
+      <h2>Converter para:</h2>
+      <ion-radio-group mode="md" [(ngModel)]="optionsForConversion">
+        <ion-radio value="mi">Milhas (mi)</ion-radio>
+        <ion-radio value="in">Polegadas (in)</ion-radio>
+        <ion-radio value="ft">Pés (ft)</ion-radio>
+      </ion-radio-group>
+    </div>
+    <ion-button id="calc" color="light" (click)="calcConversion()">Calcular {{valueToConvert}}{{optionsToConvert}} para {{optionsForConversion}}</ion-button>
+  </div>
+</ion-content>
