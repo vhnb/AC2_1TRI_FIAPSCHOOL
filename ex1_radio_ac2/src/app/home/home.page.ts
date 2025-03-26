@@ -39,12 +39,12 @@ export class HomePage {
 
     const totalValue = initialFee + (this.amountKmDriven * kmDriven)
 
-    let driverPart = 0.20
-    let appPart = 0.75
+    let driverPart = 0.75
+    let appPart = 0.25
 
     if (totalValue > 150) {
-      driverPart = 0.25
-      appPart = 0.80
+      driverPart = 0.80
+      appPart = 0.20
     }
 
     const valueApp = totalValue * appPart
