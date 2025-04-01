@@ -33,5 +33,6 @@ export class HomePage {
     if (imc < 24.9) return `Seu IMC é ${imc.toFixed(2)} e você está no peso normal`
     if (imc < 29.9) return `Seu IMC é ${imc.toFixed(2)} e você está com sobrepeso`
     if (imc < 34.9) return `Seu IMC é ${imc.toFixed(2)} e você está com obesidade`
+    if (imc > 35) return `Seu IMC é ${imc.toFixed(2)}`
   }
 }
