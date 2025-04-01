@@ -55,7 +55,7 @@ export class HomePage {
         } else if (this.optionsForConversion === 'in') {
           result = this.valueToConvert * 0.393
         } else if (this.optionsForConversion === 'ft') {
-          result = this.valueToConvert * 0.032
+          result = this.valueToConvert * 0.0328
         }
         break
       default:
